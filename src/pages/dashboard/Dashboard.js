@@ -34,6 +34,7 @@ import { Typography } from "../../components/Wrappers";
 import Dot from "../../components/Sidebar/components/Dot";
 import Table from "./components/Table/Table";
 import BigStat from "./components/BigStat/BigStat";
+import Maps from "../maps/Maps";
 
 // Custom components
 import UserTable from "./components/Table/UserTable";
@@ -74,8 +75,9 @@ export default function Dashboard(props) {
 
   return (
     <>
-      <PageTitle title="Dashboard"/>
+      {/* <PageTitle title="Dashboard"/> */}
       <Grid container spacing={4}>
+      
         <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget
             title="Visits Today"
@@ -431,6 +433,9 @@ export default function Dashboard(props) {
             <Table data={mock.table} />
           </Widget>
         </Grid> */}
+        {/* <Grid item lg={3} md={4} sm={6} xs={12}>
+        <Maps/>
+      </Grid> */}
         <Grid item xs={12}>
           <Widget
             title="MOD User List"

@@ -108,7 +108,7 @@ export default function Header(props) {
   return (
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar className={classes.toolbar}>
-        <IconButton
+        {/* <IconButton
           color="inherit"
           onClick={() => toggleSidebar(layoutDispatch)}
           className={classNames(
@@ -135,12 +135,11 @@ export default function Header(props) {
               }}
             />
           )}
-        </IconButton>
+        </IconButton> */}
         <Typography variant="h6" weight="medium" className={classes.logotype}>
-          MOD Admin
+          Rimorin Dashboard
         </Typography>
         <div className={classes.grow} />
-        {/* <Button component={Link} href="https://flatlogic.com/templates/react-material-admin-full" variant={"outlined"} color={"secondary"} style={{marginRight: 24}}>Unlock full version</Button> */}
         <div
           className={classNames(classes.search, {
             [classes.searchFocused]: isSearchOpen,
@@ -291,14 +290,6 @@ export default function Header(props) {
             <Typography variant="h4" weight="medium">
               John Eric
             </Typography>
-            {/* <Typography
-              className={classes.profileMenuLink}
-              component="a"
-              color="primary"
-              href="https://flatlogic.com"
-            >
-              Flalogic.com
-            </Typography> */}
           </div>
           <MenuItem
             className={classNames(

@@ -16,12 +16,12 @@ import Sidebar from "../Sidebar";
 
 // pages
 import Dashboard from "../../pages/dashboard";
-import Typography from "../../pages/typography";
-import Notifications from "../../pages/notifications";
-import Maps from "../../pages/maps";
-import Tables from "../../pages/tables";
-import Icons from "../../pages/icons";
-import Charts from "../../pages/charts";
+// import Typography from "../../pages/typography";
+// import Notifications from "../../pages/notifications";
+// import Maps from "../../pages/maps";
+// import Tables from "../../pages/tables";
+// import Icons from "../../pages/icons";
+// import Charts from "../../pages/charts";
 
 // context
 import { useLayoutState } from "../../context/LayoutContext";
@@ -36,14 +36,16 @@ function Layout(props) {
     <div className={classes.root}>
         <>
           <Header history={props.history} />
-          <Sidebar />
+          {/* <Sidebar /> */}
           <div
             className={classnames(classes.content, {
               [classes.contentShift]: layoutState.isSidebarOpened,
             })}
           >
             <div className={classes.fakeToolbar} />
-            <Switch>
+
+            <Dashboard/>
+            {/* <Switch>
               <Route path="/app/dashboard" component={Dashboard} />
               <Route path="/app/typography" component={Typography} />
               <Route path="/app/tables" component={Tables} />
@@ -56,7 +58,7 @@ function Layout(props) {
               <Route path="/app/ui/maps" component={Maps} />
               <Route path="/app/ui/icons" component={Icons} />
               <Route path="/app/ui/charts" component={Charts} />
-            </Switch>
+            </Switch> */}
           </div>
         </>
     </div>
