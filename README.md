@@ -1,8 +1,8 @@
 # Personal Dashboard
 
-(../media/images/login.png)
+(https://github.com/rimorin/rimorin_dashboard/blob/media/images/login.png)
 
-(../media/images/dash.png)
+(https://github.com/rimorin/rimorin_dashboard/blob/media/images/dashboard.png)
 
 Built using the following libraries 
 
