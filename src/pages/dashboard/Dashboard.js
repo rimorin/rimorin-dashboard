@@ -152,7 +152,7 @@ export default function Dashboard(props) {
                   colorBrightness="secondary"
                   className={classes.legendElementText}
                 >
-                  Integration
+                  UAT
                 </Typography>
               </div>
               <div className={classes.legendElement}>
@@ -162,7 +162,7 @@ export default function Dashboard(props) {
                   colorBrightness="secondary"
                   className={classes.legendElementText}
                 >
-                  SDK
+                  Production
                 </Typography>
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                Integration
+                UAT
               </Typography>
               <LinearProgress
                 variant="determinate"
@@ -189,7 +189,7 @@ export default function Dashboard(props) {
                 colorBrightness="secondary"
                 className={classes.progressSectionTitle}
               >
-                SDK
+                Production
               </Typography>
               <LinearProgress
                 variant="determinate"
@@ -279,7 +279,7 @@ export default function Dashboard(props) {
           </Widget>
         </Grid>
         <Grid item lg={3} md={4} sm={6} xs={12}>
-          <Widget title="Revenue Breakdown" upperTitle className={classes.card}>
+          <Widget title="Performance Breakdown" upperTitle className={classes.card}>
             <Grid container spacing={2}>
               <Grid item xs={6}>
                 <ResponsiveContainer width="100%" height={144}>
@@ -374,7 +374,7 @@ export default function Dashboard(props) {
             <ResponsiveContainer width="100%" minWidth={500} height={350}>
               <ComposedChart
                 margin={{ top: 0, right: -15, left: -15, bottom: 0 }}
-                data={messages}
+                data={getMainChartData()}
               >
                 <YAxis
                   ticks={[0, 3, 5, 10]}
@@ -390,14 +390,14 @@ export default function Dashboard(props) {
                 />
                 <Area
                   type="natural"
-                  dataKey="john.kwan"
+                  dataKey="tablet"
                   fill={theme.palette.background.light}
                   strokeWidth={0}
                   activeDot={false}
                 />
                 <Line
                   type="natural"
-                  dataKey="allan.lee"
+                  dataKey="mobile"
                   stroke={theme.palette.primary.main}
                   strokeWidth={2}
                   dot={false}
@@ -405,7 +405,7 @@ export default function Dashboard(props) {
                 />
                 <Line
                   type="linear"
-                  dataKey="angck"
+                  dataKey="desktop"
                   stroke={theme.palette.warning.main}
                   strokeWidth={2}
                   dot={{
@@ -436,7 +436,7 @@ export default function Dashboard(props) {
         {/* <Grid item lg={3} md={4} sm={6} xs={12}>
         <Maps/>
       </Grid> */}
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Widget
             title="MOD User List"
             upperTitle
@@ -503,7 +503,7 @@ export default function Dashboard(props) {
               </div>
               </React.Fragment>
               </Widget>
-        </Grid>
+        </Grid> */}
       </Grid>
     </>
   );
