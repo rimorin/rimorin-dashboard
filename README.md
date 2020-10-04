@@ -1,8 +1,8 @@
 # Personal Dashboard
 
-(https://github.com/rimorin/rimorin_dashboard/blob/media/images/login.png)
+![alt text](https://github.com/rimorin/rimorin_dashboard/blob/media/images/login.png)
 
-(https://github.com/rimorin/rimorin_dashboard/blob/media/images/dashboard.png)
+![alt text](https://github.com/rimorin/rimorin_dashboard/blob/media/images/dashboard.png)
 
 Built using the following libraries 
 
