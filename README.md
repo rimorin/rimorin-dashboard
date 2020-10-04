@@ -1,5 +1,9 @@
 # Personal Dashboard
 
+(../media/images/login.png)
+
+(../media/images/dash.png)
+
 Built using the following libraries 
 
 [React](https://facebook.github.io/react/), 
