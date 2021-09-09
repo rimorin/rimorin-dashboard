@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: react-deployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: react-app
@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: react-container
-        image: rimorin/react:latest
-      imagePullSecrets:
-        - name: regcred
+        image: gcr.io/sinuous-ally-322609/dashboard:v1
+        ports:
+        - containerPort: 3000
+          protocol: TCP
       
